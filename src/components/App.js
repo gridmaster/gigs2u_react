@@ -1,13 +1,12 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import faker from "faker";
+//import ReactDOM from "react-dom";
 import GigDetail from "./GigDetail";
 import GigCard from "./GigCard";
 import HeaderCard from "./HeaderCard";
 import SearchBar from "./SearchBar";
 import "../style/gigstyle.css";
 import "../style/gigList.css";
-import benefit from "../images/benefit.jpg";
+//import benefit from "../images/benefit.jpg";
 
 class App extends React.Component {
   render() {
@@ -29,7 +28,7 @@ class App extends React.Component {
             bandName="Bigus Dickus!"
             gigDate="11/01/20"
             text="Nice tats!"
-            avatar={faker.image.avatar()}
+            avatar="../images/benefit.jpg"
             ticketPrice="$15.00"
           />
         </GigCard>
@@ -38,7 +37,7 @@ class App extends React.Component {
             bandName="Longfellow!"
             gigDate="11/24/20"
             text="Boofoo! Boofoo!"
-            avatar={faker.image.avatar()}
+            avatar="../images/benefit.jpg"
             ticketPrice="$12.00"
           />
         </GigCard>
