@@ -20,7 +20,7 @@ class App extends React.Component {
             bandName="Baby Buntings!"
             gigDate="11/12/20"
             text="What up!"
-            avatar={benefit}
+            avatar="../images/benefit.jpg"
             ticketPrice="$20.00"
           />
         </GigCard>
