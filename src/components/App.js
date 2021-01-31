@@ -11,10 +11,10 @@ import "../style/gigList.css";
 class App extends React.Component {
 
   render() {
-    const imageList = [
-      { id: 1, link: "../images/benefit.jpg" },
-      { id: 2, link: "../images/fire.jpg" },
-      { id: 3, link: "../images/sticky.jpg" }
+    const eventList = [
+      { id: 1, link: "../images/benefit.jpg", event: "Big whopper dopper!", date: "2/22/2021" },
+      { id: 2, link: "../images/fire.jpg", event: "Amazing music!", date: "2/11/2021" },
+      { id: 3, link: "../images/sticky.jpg", event: "Woo-Hoo!!!", date: "2/18/2021" }
     ];
     
     console.log(process.env.PUBLIC_URL);
@@ -23,7 +23,7 @@ class App extends React.Component {
       <div className="ui container" style={{ marginTop: '10px' }}>
         <HeaderCard />
         <SearchBar />
-        <ImageList images={imageList} />
+        <ImageList images={eventList} />
       </div>
     );
   }
