@@ -14,11 +14,14 @@ class App extends React.Component {
     const imageList = [
       { id: 1, link: "../images/benefit.jpg" },
       { id: 2, link: "../images/fire.jpg" },
-      { id: 3, link: "./sticky.jpg" }
+      { id: 3, link: "../images/sticky.jpg" }
     ];
     
+    console.log(process.env.PUBLIC_URL);
+
     return (
       <div className="ui container" style={{ marginTop: '10px' }}>
+        <HeaderCard />
         <SearchBar />
         <ImageList images={imageList} />
       </div>

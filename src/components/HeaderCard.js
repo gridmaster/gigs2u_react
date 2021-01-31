@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../images/logobest.jpg"; // with import
+import logo from "../images/logobest.jpg";
 
 const HeaderCard = props => {
   return (
