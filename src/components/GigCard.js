@@ -11,5 +11,3 @@ const GigCard = props => {
 };
 
 export default GigCard;
-//gig-time-place
-//

@@ -1,25 +1,40 @@
 import React from 'react';
+import EventCard from './EventCard';
 
-const ImageList = (props) => {
-    console.log(props.images);
+const ImageList = props => {
 
-    const images = props.images.map((image, index) => {
+    // console.log(props);
 
-        const imgKey = image.key;
-        console.log(imgKey.toString());
+    // console.log(props.events);
 
-        return ( 
+    const events = props.events.map((event, index) => {
+        
+        //console.log(event);
+        
+        return (
             <div>
-                <img key={imgKey.toString} src={image.link} alt='wtf' style={{height: 200, width: 200}} />
-                <br />
-                <span>{image.event}</span>
-                <br />
-                <span>{image.date}</span>
+            <img key={event.key} src={event.link} alt='wtf' style={{height: 200, width: 200}} />
+            <br />
+            <span>{event.event}</span>
+            <br />
+            <span>{event.date}</span>
             </div>
-    )})
 
-    console.log({images});
-    return <div>{images}</div>
+        )
+    });
+
+    // const images = props.events.map((events, index) => {
+
+    //     const imgKey = events.key;
+    //     console.log(imgKey.toString());
+
+    //     return (
+    //         <div>hello...</div>
+    //         //<EventCard images={events} />
+    //     );
+    // });
+
+    return <div>{events}</div>;
 }
 
 export default ImageList;
