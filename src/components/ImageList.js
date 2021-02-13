@@ -1,6 +1,4 @@
 import React from 'react';
-// import EventCard from './EventCard';
-// import ImageListStyle from '../style/imageList.css'
 
 const ImageList = props => {
 
@@ -12,7 +10,7 @@ const ImageList = props => {
                 <span className="image-list-span">{event}</span>
                 <span>{date}</span>
                 <br />
-           </div>
+            </div>
         )
     });
 
