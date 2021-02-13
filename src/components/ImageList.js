@@ -1,38 +1,20 @@
 import React from 'react';
-import EventCard from './EventCard';
+// import EventCard from './EventCard';
+// import ImageListStyle from '../style/imageList.css'
 
 const ImageList = props => {
 
-    // console.log(props);
-
-    // console.log(props.events);
-
-    const events = props.events.map((event, index) => {
-        
-        //console.log(event);
+    const events = props.events.map(({key, link, event, date}) => {
         
         return (
-            <div>
-            <img key={event.key} src={event.link} alt='wtf' style={{height: 200, width: 200}} />
-            <br />
-            <span>{event.event}</span>
-            <br />
-            <span>{event.date}</span>
-            </div>
-
+            <div key={key} className="gig-list" style={{width: 220}}>
+                <img src={link} alt='wtf' style={{height: 200, width: 200}} />
+                <span className="image-list-span">{event}</span>
+                <span>{date}</span>
+                <br />
+           </div>
         )
     });
-
-    // const images = props.events.map((events, index) => {
-
-    //     const imgKey = events.key;
-    //     console.log(imgKey.toString());
-
-    //     return (
-    //         <div>hello...</div>
-    //         //<EventCard images={events} />
-    //     );
-    // });
 
     return <div>{events}</div>;
 }

@@ -1,11 +1,11 @@
 import React from "react";
-import GigDetail from "./GigDetail";
-import GigCard from "./GigCard";
+// import GigDetail from "./GigDetail";
+// import GigCard from "./GigCard";
 import HeaderCard from "./HeaderCard";
 import SearchBar from "./SearchBar";
 import ImageList from "./ImageList";
-import Event from "./EventImage";
-import EventCard from "./EventCard";
+// import Event from "./EventImage";
+// import EventCard from "./EventCard";
 import "../style/gigstyle.css";
 import "../style/gigList.css";
 
@@ -21,7 +21,7 @@ class App extends React.Component {
     console.log(process.env.PUBLIC_URL);
 
     return (
-      <div className="ui container" style={{ marginTop: '10px' }}>
+      <div className="ui container" style={{ marginTop: '10px'}}>
         <HeaderCard />
         <SearchBar />
         <ImageList events={eventList} />
