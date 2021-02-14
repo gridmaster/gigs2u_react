@@ -1,20 +1,30 @@
+import "../style/gigList.css";
+import "../style/imageList.css"
 import React from 'react';
 
 const ImageList = props => {
 
+    let thisEvent;
     const events = props.events.map(({key, link, event, date}) => {
-        
+
         return (
-            <div key={key} className="gig-list" style={{width: 220}}>
-                <img src={link} alt='wtf' style={{height: 200, width: 200}} />
-                <span className="image-list-span">{event}</span>
-                <span>{date}</span>
+            <div style={{textAlign: "center"}}>
+                <img src={link} key={key} alt='wtf' />
                 <br />
+                <view style={{textAlign: "center"}}>
+                <text className="image-list-text">{event}</text>
+                <br />
+                <text className="image-list-text">{date}</text>
+                </view>
             </div>
         )
     });
 
-    return <div>{events}</div>;
+    return (
+        <div className="gig-list">
+            {events}
+        </div>
+    )
 }
 
 export default ImageList;
