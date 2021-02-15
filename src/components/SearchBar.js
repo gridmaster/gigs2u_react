@@ -23,11 +23,14 @@ class SearchBar extends React.Component {
             <div className="ui segemnt">
                 <form onSubmit={this.onFormSubmit} onClick={this.onMouseClick} className="ui form">
                     <div className="field">
-                        <label>Search</label>
-                        <input type="text" className="search" 
-                        value={this.state.term} 
-                        onChange={e => this.setState({term: e.target.value})}
-                        style={{background: "#77868F", color: "lightblue"}}/>
+                        <select value="Band" style={{width: "120px"}}>
+                            <option value="Band">Band</option>
+                            <option value="Gig">Gig</option>
+                            <option value="Venue">Venue</option>
+                            <option value="Vendor">Vendor</option>
+                        </select>
+                        <input type="text" className="search" value={this.state.term} onChange={e => this.setState({term: e.target.value})}
+                            style={{background: "#77868F", color: "lightblue"}}/>
                     </div>
                 </form>
             </div>

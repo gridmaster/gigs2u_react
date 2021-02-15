@@ -1,13 +1,10 @@
 import React from "react";
-// import GigDetail from "./GigDetail";
-// import GigCard from "./GigCard";
 import HeaderCard from "./HeaderCard";
 import SearchBar from "./SearchBar";
 import ImageList from "./ImageList";
-// import Event from "./EventImage";
-// import EventCard from "./EventCard";
 import "../style/gigstyle.css";
 import "../style/gigList.css";
+import "../style/searchstyle.css";
 
 class App extends React.Component {
 
@@ -24,6 +21,7 @@ class App extends React.Component {
       <div className="ui container" style={{ marginTop: '10px'}}>
         <HeaderCard />
         <SearchBar />
+        <h2 style={{color : 'white'}}>Bands Playing</h2>
         <ImageList events={eventList} />
       </div>
     );
