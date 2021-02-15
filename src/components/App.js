@@ -24,7 +24,7 @@ class App extends React.Component {
       <div className="ui container" style={{ marginTop: '10px'}}>
         <HeaderCard />
         <SearchBar />
-        <h2 style={{color : 'white'}}>Bands Playing</h2>
+        <h1 style={{color : 'white', fontSize:33}}>Bands playing</h1>
         <ImageList events={eventList} />
       </div>
     );

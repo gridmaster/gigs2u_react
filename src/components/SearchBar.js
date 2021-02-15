@@ -43,7 +43,7 @@ class SearchBar extends React.Component {
                         </select>
 
                         <input type="text" value={this.state.term} onChange={e => this.setState({term: e.target.value})}
-                        style={{background: "#77868F", color: "lightblue", width: "600"}}/>
+                                style={{background: "#08243c", color: "white", width: "600"}}/>
                     </div>
                 </form>
             </div>
