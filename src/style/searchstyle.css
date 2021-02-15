@@ -1,8 +1,14 @@
 .search {
   background-color: #01243b;
-  color: white;
+  background: "#77868F";
+  color: "lightblue";
 }
 
 .search h3 {
-  color : white;
+  color: white;
+}
+
+.searchAllign {
+  display: flex;
+  flex-direction: row;
 }
