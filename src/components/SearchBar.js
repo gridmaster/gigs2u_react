@@ -34,17 +34,21 @@ class SearchBar extends React.Component {
         return (
             <div className="ui segemnt" style={{width: "100%", textAlign: "center" }}>
 
-                <form onSubmit={this.onFormSubmit} onClick={this.onMouseClick} className="ui form">
-                    <div className="field" style={{width: "100%", textAlign: "center", height: "20px important!"}}>
+                <form onSubmit={this.onFormSubmit} onClick={this.onMouseClick}>
+                    <div style={{width: "100%", textAlign: "center", height: "30px important!"}}>
 
-                        <select value={this.state.option} onChange={this.handleChange} style={{width: "100px"}}>
+                        <select value={this.state.option} onChange={this.handleChange} style={{width: "100px", height: "30px", textAlign: "center", background: "#08243c", color: "white"}}>
                             {options.map((option) => (
                                 <option value={option.value}>{option.label}</option>
                             ))}
                         </select>
 
-                        <input className="fas fa-search-location" type="text" placeholder="Type a gig or location" value={this.state.term} onChange={e => this.setState({term: e.target.value})}
-                                style={{background: "#08243c", color: "white", width: "600"}}/>
+                        <input type="text" placeholder="Type a gig or location" value={this.state.term} onChange={e => this.setState({term: e.target.value})}
+                                style={{background: "#08243c", color: "white", width: "400px", height: "33px", borderWidth: "1px", borderColor: "#08243c"}}/>
+
+                        <button style={{height: "30px", borderWidth: 1, borderColor: '#2dd073', background: "#08243c", color: "#2dd073",}}
+                        onPress={this._handlePress}>
+                        REFINE</button>
                     </div>
                 </form>
             </div>

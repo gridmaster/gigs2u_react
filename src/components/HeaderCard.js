@@ -1,10 +1,11 @@
 import React from "react";
+import "../style/header.css";
 import logo from "../images/logobest.jpg";
 
 const HeaderCard = props => {
   return (
-    <div>
-      <img src={logo} alt="header icon" style={{ width: "200px", height: "200px" }} />
+    <div className="header">
+      <img src={logo} alt="header icon" />
     </div>
   );
 };
