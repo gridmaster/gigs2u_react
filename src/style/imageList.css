@@ -3,7 +3,17 @@
   color: white;
   margin: auto;
   border: 1px;
-  width: 200px;
+  width: 154;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.gig-list-text {
+  font-weight: bold;
+  color: white;
+  margin: auto;
+  border: 1px;
+  width: 200;
   text-align: center;
   padding-top: 10px;
 }

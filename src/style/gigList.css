@@ -1,11 +1,12 @@
 .gig-list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
-  row-gap: 10px;
-  column-gap: 10px;
-  padding-top: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(155px, 1fr));
+}
+
+.band-list img {
+  width: 150px;
 }
 
 .gig-list img {
-  width: 225px;
+  width: 250;
 }

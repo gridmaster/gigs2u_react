@@ -1,14 +1,14 @@
-import "../style/imageList.css"
+import "../style/gigList.css";
 import React from 'react';
 
-const ImageList = props => {
+const GigList = props => {
 
     let thisEvent;
     const events = props.events.map(({key, link, event, date}) => {
 
         return (
-            <div style={{textAlign: "center", height: "220px", width: "153px"}}>
-                <img src={link} key={key} alt='wtf' style={{height: "150px", width: "150"}}/>
+            <div style={{textAlign: "center", height: "250px", width: "200px"}}>
+                <img src={link} key={key} alt='bfd' style={{width: "250px", height: "250px"}} />
                 <br />
                 <view style={{textAlign: "center"}}>
                 <text className="image-list-text">{event}</text>
@@ -26,4 +26,4 @@ const ImageList = props => {
     )
 }
 
-export default ImageList;
+export default GigList;
