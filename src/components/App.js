@@ -1,7 +1,7 @@
 import React from "react";
 import HeaderCard from "./HeaderCard";
 import SearchBar from "./SearchBar";
-import ImageList from "./ImageList";
+import BandList from "./BandList";
 import GigList from "./GigList";
 import "../style/gigstyle.css";
 import "../style/gigList.css";
@@ -35,7 +35,7 @@ class App extends React.Component {
         <HeaderCard />
         <SearchBar />
         <h1 style={{color : 'white', fontSize:33}}>Bands playing</h1>
-        <ImageList events={bandList} />
+        <BandList events={bandList} />
         <h1 style={{color : 'white', fontSize:33}}>Upcoming gigs</h1>
         <GigList events={gigList} />
       </div>
