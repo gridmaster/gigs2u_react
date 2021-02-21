@@ -4,18 +4,17 @@ import React from 'react';
 
 const BandList = props => {
 
-    let thisEvent;
     const events = props.events.map(({key, link, event, date}) => {
 
         return (
             <div style={{textAlign: "center", height: "220px", width: "153px"}}>
                 <img src={link} key={key} alt='wtf' style={{height: "150px", width: "150"}}/>
                 <br />
-                <view style={{textAlign: "center"}}>
-                <text className="image-list-text">{event}</text>
+                <div style={{textAlign: "center"}}>
+                <span className="image-list-text">{event}</span>
                 <br />
-                <text className="image-list-text">{date}</text>
-                </view>
+                <span className="image-list-text">{date}</span>
+                </div>
             </div>
         )
     });

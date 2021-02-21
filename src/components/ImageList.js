@@ -10,11 +10,11 @@ const ImageList = props => {
             <div style={{textAlign: "center", height: "220px", width: "153px"}}>
                 <img src={link} key={key} alt='wtf' style={{height: "150px", width: "150"}}/>
                 <br />
-                <view style={{textAlign: "center"}}>
+                <div style={{textAlign: "center"}}>
                 <text className="image-list-text">{event}</text>
                 <br />
                 <text className="image-list-text">{date}</text>
-                </view>
+                </div>
             </div>
         )
     });

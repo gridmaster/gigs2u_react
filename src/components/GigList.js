@@ -10,9 +10,9 @@ const GigList = props => {
                 <img src={link} key={key} alt='bfd' style={{width: "250px", height: "250px"}} />
                 <br />
                 <div style={{textAlign: "center"}}>
-                    <text className="image-list-text">{event}</text>
+                    <span className="image-list-text">{event}</span>
                     <br />
-                    <text className="image-list-text">{date}</text>
+                    <span className="image-list-text">{date}</span>
                 </div>
             </div>
         )
