@@ -7,8 +7,8 @@ const BandList = props => {
     const events = props.events.map(({key, link, event, date}) => {
 
         return (
-            <div style={{textAlign: "center", height: "220px", width: "153px"}}>
-                <img src={link} key={key} alt='wtf' style={{height: "150px", width: "150"}}/>
+            <div key={key} style={{textAlign: "center", height: "220px", width: "153px"}}>
+                <img src={link} alt={event} style={{height: "150px", width: "150"}}/>
                 <br />
                 <div style={{textAlign: "center"}}>
                 <span className="image-list-text">{event}</span>

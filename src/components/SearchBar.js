@@ -36,7 +36,8 @@ class SearchBar extends React.Component {
     // }
 
     render() {
-        const options = [{ label: 'Band', value: "band" }, { label: 'Gig', value: "gig" }, { label: 'Venue', value: "venue" }, { label: 'Vendor', value: "vendor" }];
+        const options = [{ key: 1, label: 'Band', value: "band" }, { key: 2, label: 'Gig', value: "gig" }, 
+                         { key: 3, label: 'Venue', value: "venue" }, { key:4, label: 'Vendor', value: "vendor" }];
         
         return (
             <div className="ui segemnt" style={{width: "100%", textAlign: "center" }}>
@@ -45,7 +46,7 @@ class SearchBar extends React.Component {
 
                         <select value={this.state.option} onChange={this.handleChange} style={{width: "100px", height: "30px", textAlign: "center", background: "#08243c", color: "white"}}>
                             {options.map((option) => (
-                                <option value={option.value}>{option.label}</option>
+                                <option key={option.key} value={option.value}>{option.label}</option>
                             ))}
                         </select>
 
@@ -56,8 +57,7 @@ class SearchBar extends React.Component {
                             REFINE
                         </button>
                         
-                        <img  className="filler" src="./images/spacing.jpg" />
-                        
+                        <img alt="spacing" className="filler" src="./images/spacing.jpg" />                        
 
                         <button className="searchButton" style={{backgroundImage: searchIcon}} onClick={this._handlePress}>
                         </button>

@@ -11,7 +11,7 @@ class App extends React.Component {
 
   render() {
     const bandList = [
-      { key: 1, link: "../images/benefit.jpg", event: "Big whopper dopper!", date: "2/22/2021" },
+      // { key: 1, link: "../images/benefit.jpg", event: "Big whopper dopper!", date: "2/22/2021" },
       { key: 2, link: "../images/fire.jpg", event: "Amazing music!", date: "2/11/2021" },
       { key: 3, link: "../images/sticky.jpg", event: "Woo-Hoo!!!", date: "2/18/2021" },
       { key: 4, link: "../images/blindfaith.jpg", event: "Can't find my way!", date: "2/26/2021" },
